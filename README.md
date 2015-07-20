@@ -13,17 +13,6 @@ Rather than `Functor`, a closer Curry analogue to modal logic's Howard inspirati
 
 From these elements, we construct a small embedded domain-specific language to elegantly express and evaluate multidimensional "spreadsheet-like" recurrences for a variety of cellular automata.
 
-## Building the Paper
-
-You need a working `LaTeX` installation, as well as the programs [`latexmk`](https://www.ctan.org/pkg/latexmk/?lang=en) (which may have come with your `LaTeX` distribution) and [`lhs2TeX`](http://www.andres-loeh.de/lhs2tex).
-
-Once you have these installed, you can build the paper by running:
-
-```
-lhs2TeX GQFC.lhs -o GQFC.tex
-latexmk -pdf GQFC
-```
-
 ## Playing Along with the Code
 
 You need a working installation of `GHC` version 7.8 or higher, as well as a relatively recent version of `cabal` (supporting sandboxes).
@@ -35,4 +24,15 @@ cabal sandbox init
 cabal install --only-dependencies
 cabal configure
 cabal repl
+```
+
+## Building the Paper
+
+You need a working `LaTeX` installation, as well as the programs [`latexmk`](https://www.ctan.org/pkg/latexmk/?lang=en) (which may have come with your `LaTeX` distribution) and [`lhs2TeX`](http://www.andres-loeh.de/lhs2tex).
+
+Once you have these installed, you can build the paper by running:
+
+```
+lhs2TeX GQFC.lhs -o GQFC.tex
+latexmk -pdf GQFC
 ```
