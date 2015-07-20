@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
+# Extracts the plaintext version of the abstract from the paper.
+
 cat GQFC.lhs | sed -n '/\\begin{abstract}/,/\\end{abstract}/p' | tail -n +2 | sed \$d | detex
