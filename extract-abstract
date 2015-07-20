@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+cat GQFC.lhs | sed -n '/\\begin{abstract}/,/\\end{abstract}/p' | tail -n +2 | sed \$d | detex

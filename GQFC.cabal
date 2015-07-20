@@ -1,0 +1,13 @@
+name:                GQFC
+version:             0.1.0.0
+synopsis:            Executable literate source for "Getting a Quick Fix on Comonads"
+author:              Kenneth Foner
+maintainer:          kfoner@seas.upenn.edu
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     GQFC
+  other-extensions:    DataKinds, PolyKinds, KindSignatures, FlexibleContexts, FlexibleInstances, MultiParamTypeClasses, GADTs, TypeFamilies, DeriveFunctor, TupleSections, UndecidableInstances
+  build-depends:       base >=4.7, Stream >=0.4 && <0.5, applicative-numbers >=0.1 && <0.2, comonad >=4.2 && <4.3, distributive >=0.4 && <0.5
+  default-language:    Haskell2010
