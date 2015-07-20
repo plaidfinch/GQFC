@@ -15,7 +15,7 @@ From these elements, we construct a small embedded domain-specific language to e
 
 ## Building the Paper
 
-You need a working `LaTeX` installation, as well as the programs `latexmk` (which may have come with your `LaTeX` distribution) and `lhs2TeX` (http://www.andres-loeh.de/lhs2tex).
+You need a working `LaTeX` installation, as well as the programs [`latexmk`](https://www.ctan.org/pkg/latexmk/?lang=en) (which may have come with your `LaTeX` distribution) and [`lhs2TeX`](http://www.andres-loeh.de/lhs2tex).
 
 Once you have these installed:
 
