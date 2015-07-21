@@ -1,0 +1,13 @@
+.cabal-sandbox/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.ptb
+*.hi
+*.o
+GQFC.tex
+cabal.sandbox.config
+dist/
