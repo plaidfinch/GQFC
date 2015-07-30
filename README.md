@@ -36,3 +36,17 @@ Once you have these installed, you can build the paper by running:
 lhs2TeX GQFC.lhs -o GQFC.tex
 latexmk -pdf GQFC
 ```
+
+## Reading Only the Code
+
+In some circumstances, it might be easier to read only the source code for the paper, without any of the text. To extract this, you need to install the [`unlit`](https://hackage.haskell.org/package/unlit) tool (`cabal install unlit`). Once you have that installed, just run:
+
+```
+unlit -i GQFC.lhs > GQFC.hs
+```
+
+After that, you can open `GQFC.hs` in your favorite editor to peruse the code only, in exactly the form GHC interprets when loading `GQFC.lhs`.
+
+## Abstracting the Extract (Or Rather, Extracting the Abstract)
+
+The script `extract-abstract` slices out the abstract of the paper and de-`LaTeX`s it for pasting into places which want a plain-text abstract.
