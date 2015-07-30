@@ -45,4 +45,4 @@ In some circumstances, it might be easier to read only the source code for the p
 unlit -i GQFC.lhs > GQFC.hs
 ```
 
-After that, you can open `GQFC.hs` in your favorite editor to peruse the code only, in exactly the form GHC interprets when loading `GQFC.lhs`.
+After that, you can open `GQFC.hs` in your favorite editor to read the paper as `GHC` sees it.
