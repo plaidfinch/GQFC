@@ -49,4 +49,4 @@ After that, you can open `GQFC.hs` in your favorite editor to peruse the code on
 
 ## Abstracting the Extract (Or Rather, Extracting the Abstract)
 
-The script `extract-abstract` slices out the abstract of the paper and de-`LaTeX`s it for pasting into places which want a plain-text abstract.
+The script `extract-abstract` slices out the abstract of the paper and de-`LaTeX`s it for pasting into places which want a plain-text abstract. It requires you to have [`detex`](https://www.ctan.org/tex-archive/support/detex?lang=en) installed, which may already have come with your `LaTeX` distribution.
