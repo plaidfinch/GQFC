@@ -28,9 +28,15 @@ To build all the artifacts in the project, you need:
 - [`lhs2TeX`](http://www.andres-loeh.de/lhs2tex) (to get it:  `cabal install lhs2tex`)
 - [`unlit`](https://hackage.haskell.org/package/unlit) (to get it: `cabal install unlit`)
 
-The script `./build-everything` creates a `cabal` sandbox and builds all the artifacts. After that, view `./GQFC.pdf` to read the paper, run `cabal repl` to launch a REPL with the code, or view `./GQFC.hs` to read *only* the code (without the paper text).
+The script `./build-everything` creates a `cabal` sandbox and builds all the artifacts.
 
-Below are details about each of the artifacts, which may be built individually.
+After that, you can...
+
+- view `./GQFC.pdf` to read the paper
+- run `cabal repl` to launch a REPL with the code
+- view `./GQFC.hs` to read *only* the code with the paper text elided
+
+Below are details about building each of the artifacts individually.
 
 ### Playing Along with the Code
 
@@ -42,6 +48,4 @@ Run `./build-paper`, which will generate the paper's PDF at `./GQFC.pdf`.
 
 ### Reading Only the Code
 
-In some circumstances, it might be desirable to read only the source code for the paper, without any of the text.
-
-Run `./extract-code`, which will generate a Haskell source file `./GQFC.hs` containing only the code for the library.
+Run `./extract-code`, which will generate a Haskell source file `./GQFC.hs` containing only the code for the library, with none of the paper text.
