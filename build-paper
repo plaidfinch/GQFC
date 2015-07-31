@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+lhs2TeX GQFC.lhs -o GQFC.tex
+latexmk -pdf GQFC
