@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Configures the sandbox
+
+cabal sandbox init
+cabal install --only-dependencies
+cabal configure
