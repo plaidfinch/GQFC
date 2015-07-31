@@ -21,14 +21,7 @@ From these elements, we construct a small embedded domain-specific language to e
 
 You need a working installation of `GHC` version 7.8 or higher, as well as a relatively recent version of `cabal` (supporting sandboxes).
 
-Once you have these installed, you can drop into a REPL for the paper's code like so:
-
-```
-cabal sandbox init
-cabal install --only-dependencies
-cabal configure
-cabal repl
-```
+Once you have these installed, you can build the code by running `./build`, then enter a REPL by running `cabal repl`.
 
 ## Building the Paper
 
