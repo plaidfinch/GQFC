@@ -9,7 +9,7 @@ The quickest way to read the paper is to [download the compiled pre-print PDF](h
 
 To read the source code or play around with it in a REPL, you can [build the accompanying artifacts](https://github.com/kwf/GQFC#building-the-artifacts).
 
-<img src="lfix.png" width="400">
+<center><img src="lfix.png" width="500"></center>
 
 ## Abstract
 
