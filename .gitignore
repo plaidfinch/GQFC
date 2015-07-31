@@ -9,5 +9,6 @@
 *.hi
 *.o
 GQFC.tex
+GQFC.hs
 cabal.sandbox.config
 dist/
