@@ -5,8 +5,6 @@ This repository is the source for the paper: **K. Foner. "Functional  Pearl: Get
 
 The paper is written in literate Haskell. It can be compiled both to a readable PDF and to executable code for the library it describes.
 
-<img src="lfix.png" width="500">
-
 The quickest way to read the paper is to [download the compiled pre-print PDF](https://github.com/kwf/GQFC/raw/master/GQFC.pdf).
 
 To read the source code or play around with it in a REPL, you can [build the accompanying artifacts](https://github.com/kwf/GQFC#building-the-artifacts).
