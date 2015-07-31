@@ -7,6 +7,8 @@ This repository contains the full source material for the above paper, in the fo
 
 The quickest way to read the paper is to [download the compiled pre-print PDF](https://github.com/kwf/GQFC/raw/master/GQFC.pdf).
 
+![The lfix function described in the paper](lfix.png)
+
 ## Abstract
 
 A piece of functional programming folklore due to Piponi provides Löb's theorem from modal provability logic with a computational interpretation as an unusual fixed point. Interpreting modal necessity as an arbitrary `Functor` in Haskell, the "type" of Löb's theorem is inhabited by a fixed point function allowing each part of a structure to refer to the whole.
