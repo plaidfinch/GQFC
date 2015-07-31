@@ -17,7 +17,7 @@ Rather than `Functor`, a closer Curry analogue to modal logic's Howard inspirati
 
 From these elements, we construct a small embedded domain-specific language to elegantly express and evaluate multidimensional "spreadsheet-like" recurrences for a variety of cellular automata.
 
-## Quick Start
+## Building the Artifacts
 
 To build all the paper's artifacts, you need:
 
