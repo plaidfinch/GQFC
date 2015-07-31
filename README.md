@@ -19,20 +19,31 @@ From these elements, we construct a small embedded domain-specific language to e
 
 ## Playing Along with the Code
 
-You need a working installation of `GHC` version 7.8 or higher, as well as a relatively recent version of `cabal` (supporting sandboxes).
+**Requirements:**
+- a working installation of `GHC` version 7.8 or higher
+- a relatively recent version of `cabal` (supporting sandboxes)
 
-Once you have these installed, you can build the code by running `./build-code`, then enter a REPL by running `cabal repl`.
+**What to do:**
+Build the paper's code by running `./build-code`, then enter a REPL by running `cabal repl`.
 
 ## Building the Paper
 
-You need a working `LaTeX` installation, as well as the programs [`latexmk`](https://www.ctan.org/pkg/latexmk/?lang=en) (which may have come with your `LaTeX` distribution) and [`lhs2TeX`](http://www.andres-loeh.de/lhs2tex).
+**Requirements:**
+- a working `LaTeX` installation
+- the program [`latexmk`](https://www.ctan.org/pkg/latexmk/?lang=en) (which may have come with your `LaTeX` distribution)
+- the program [`lhs2TeX`](http://www.andres-loeh.de/lhs2tex) (to get it, just `cabal install lhs2tex`)
 
-Once you have these installed, you can build the paper by running `./build-paper`, which will generate the PDF at `./GQFC.pdf`.
+**What to do:**
+Running `./build-paper`, which will generate the PDF at `./GQFC.pdf`.
 
 ## Reading Only the Code
 
-In some circumstances, it might be easier to read only the source code for the paper, without any of the text. To extract this, you need to install the [`unlit`](https://hackage.haskell.org/package/unlit) tool (`cabal install unlit`).
+In some circumstances, it might be desirable to read only the source code for the paper, without any of the text.
 
-Once you have that installed, you can extract the code by running `./extract-code`, which will generate a file `./GQFC.hs` containing only the code for the library.
+**Requirements**
+- the program [`unlit`](https://hackage.haskell.org/package/unlit) (to get it, just `cabal install unlit`)
+
+**What to do:**
+Run `./extract-code`, which will generate a file `./GQFC.hs` containing only the code for the library.
 
 After that, you can open this file in your favorite editor to read the paper as `GHC` sees it.
