@@ -24,7 +24,7 @@ From these elements, we construct a small embedded domain-specific language to e
 - a relatively recent version of `cabal` (supporting sandboxes)
 
 **What to do:**
-Build the paper's code by running `./build-code`, then enter a REPL by running `cabal repl`.
+Run `./build-code` once to build things, then enter a REPL by running `cabal repl`.
 
 ## Building the Paper
 
@@ -34,7 +34,7 @@ Build the paper's code by running `./build-code`, then enter a REPL by running `
 - the program [`lhs2TeX`](http://www.andres-loeh.de/lhs2tex) (to get it, just `cabal install lhs2tex`)
 
 **What to do:**
-Running `./build-paper`, which will generate the PDF at `./GQFC.pdf`.
+Run `./build-paper`, which will generate the paper's PDF at `./GQFC.pdf`.
 
 ## Reading Only the Code
 
@@ -44,6 +44,4 @@ In some circumstances, it might be desirable to read only the source code for th
 - the program [`unlit`](https://hackage.haskell.org/package/unlit) (to get it, just `cabal install unlit`)
 
 **What to do:**
-Run `./extract-code`, which will generate a file `./GQFC.hs` containing only the code for the library.
-
-After that, you can open this file in your favorite editor to read the paper as `GHC` sees it.
+Run `./extract-code`, which will generate a Haskell source file `./GQFC.hs` containing only the code for the library.
