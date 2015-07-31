@@ -19,7 +19,14 @@ From these elements, we construct a small embedded domain-specific language to e
 
 ## Quick Start
 
-To build all the artifacts in the project, you need: `GHC` 7.8+, `cabal` 1.18+, `LaTeX`, [`latexmk`](https://www.ctan.org/pkg/latexmk/?lang=en), [`lhs2TeX`](http://www.andres-loeh.de/lhs2tex), and [`unlit`](https://hackage.haskell.org/package/unlit).
+To build all the artifacts in the project, you need:
+
+- A version of `GHC` 7.8 or greater
+- A version of `cabal` supporting sandboxes (i.e. 1.18 or greater)
+- A working `LaTeX` installation
+- [`latexmk`](https://www.ctan.org/pkg/latexmk/?lang=en) (which may have come with your `LaTeX` distribution)
+- [`lhs2TeX`](http://www.andres-loeh.de/lhs2tex) (to get it:  `cabal install lhs2tex`)
+- [`unlit`](https://hackage.haskell.org/package/unlit) (to get it: `cabal install unlit`)
 
 The script `./build-everything` creates a `cabal` sandbox and builds all the artifacts. After that, view `./GQFC.pdf` to read the paper, run `cabal repl` to launch a REPL with the code, or view `./GQFC.hs` to read *only* the code (without the paper text).
 
@@ -27,29 +34,14 @@ Below are details about each of the artifacts, which may be built individually.
 
 ### Playing Along with the Code
 
-**Requirements:**
-- a working installation of `GHC` version 7.8 or higher
-- a relatively recent version of `cabal` (supporting sandboxes)
-
-**What to do:**
 Run `./build-code` once to build things, then enter a REPL by running `cabal repl`.
 
 ### Building the Paper
 
-**Requirements:**
-- a working `LaTeX` installation
-- the program [`latexmk`](https://www.ctan.org/pkg/latexmk/?lang=en) (which may have come with your `LaTeX` distribution)
-- the program [`lhs2TeX`](http://www.andres-loeh.de/lhs2tex) (to get it:  `cabal install lhs2tex`)
-
-**What to do:**
 Run `./build-paper`, which will generate the paper's PDF at `./GQFC.pdf`.
 
 ### Reading Only the Code
 
 In some circumstances, it might be desirable to read only the source code for the paper, without any of the text.
 
-**Requirements**
-- the program [`unlit`](https://hackage.haskell.org/package/unlit) (to get it: `cabal install unlit`)
-
-**What to do:**
 Run `./extract-code`, which will generate a Haskell source file `./GQFC.hs` containing only the code for the library.
