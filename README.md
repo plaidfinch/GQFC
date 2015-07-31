@@ -21,25 +21,18 @@ From these elements, we construct a small embedded domain-specific language to e
 
 You need a working installation of `GHC` version 7.8 or higher, as well as a relatively recent version of `cabal` (supporting sandboxes).
 
-Once you have these installed, you can build the code by running `./build`, then enter a REPL by running `cabal repl`.
+Once you have these installed, you can build the code by running `./build-code`, then enter a REPL by running `cabal repl`.
 
 ## Building the Paper
 
 You need a working `LaTeX` installation, as well as the programs [`latexmk`](https://www.ctan.org/pkg/latexmk/?lang=en) (which may have come with your `LaTeX` distribution) and [`lhs2TeX`](http://www.andres-loeh.de/lhs2tex).
 
-Once you have these installed, you can build the paper by running:
-
-```
-lhs2TeX GQFC.lhs -o GQFC.tex
-latexmk -pdf GQFC
-```
+Once you have these installed, you can build the paper by running `./build-paper`, which will generate the PDF at `./GQFC.pdf`.
 
 ## Reading Only the Code
 
-In some circumstances, it might be easier to read only the source code for the paper, without any of the text. To extract this, you need to install the [`unlit`](https://hackage.haskell.org/package/unlit) tool (`cabal install unlit`). Once you have that installed, just run:
+In some circumstances, it might be easier to read only the source code for the paper, without any of the text. To extract this, you need to install the [`unlit`](https://hackage.haskell.org/package/unlit) tool (`cabal install unlit`).
 
-```
-unlit -i GQFC.lhs > GQFC.hs
-```
+Once you have that installed, you can extract the code by running `./extract-code`, which will generate a file `./GQFC.hs` containing only the code for the library.
 
-After that, you can open `GQFC.hs` in your favorite editor to read the paper as `GHC` sees it.
+After that, you can open this file in your favorite editor to read the paper as `GHC` sees it.
