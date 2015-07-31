@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Build everything for the project
+
+./extract-code
+./build-code
+./build-paper

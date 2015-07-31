@@ -17,7 +17,15 @@ Rather than `Functor`, a closer Curry analogue to modal logic's Howard inspirati
 
 From these elements, we construct a small embedded domain-specific language to elegantly express and evaluate multidimensional "spreadsheet-like" recurrences for a variety of cellular automata.
 
-## Playing Along with the Code
+## Quick Start
+
+To build all the artifacts in the project, you need: `GHC` 7.8+, `cabal` 1.18+, `LaTeX`, [`latexmk`](https://www.ctan.org/pkg/latexmk/?lang=en), [`lhs2TeX`](http://www.andres-loeh.de/lhs2tex), and [`unlit`](https://hackage.haskell.org/package/unlit).
+
+The script `./build-everything` creates a `cabal` sandbox and builds all the artifacts. After that, view `./GQFC.pdf` to read the paper, run `cabal repl` to launch a REPL with the code, or view `./GQFC.hs` to read *only* the code (without the paper text).
+
+Below are details about each of the artifacts, which may be built individually.
+
+### Playing Along with the Code
 
 **Requirements:**
 - a working installation of `GHC` version 7.8 or higher
@@ -26,7 +34,7 @@ From these elements, we construct a small embedded domain-specific language to e
 **What to do:**
 Run `./build-code` once to build things, then enter a REPL by running `cabal repl`.
 
-## Building the Paper
+### Building the Paper
 
 **Requirements:**
 - a working `LaTeX` installation
@@ -36,7 +44,7 @@ Run `./build-code` once to build things, then enter a REPL by running `cabal rep
 **What to do:**
 Run `./build-paper`, which will generate the paper's PDF at `./GQFC.pdf`.
 
-## Reading Only the Code
+### Reading Only the Code
 
 In some circumstances, it might be desirable to read only the source code for the paper, without any of the text.
 
