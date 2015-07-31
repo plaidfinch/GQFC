@@ -31,7 +31,7 @@ Run `./build-code` once to build things, then enter a REPL by running `cabal rep
 **Requirements:**
 - a working `LaTeX` installation
 - the program [`latexmk`](https://www.ctan.org/pkg/latexmk/?lang=en) (which may have come with your `LaTeX` distribution)
-- the program [`lhs2TeX`](http://www.andres-loeh.de/lhs2tex) (to get it, just `cabal install lhs2tex`)
+- the program [`lhs2TeX`](http://www.andres-loeh.de/lhs2tex) (to get it:  `cabal install lhs2tex`)
 
 **What to do:**
 Run `./build-paper`, which will generate the paper's PDF at `./GQFC.pdf`.
@@ -41,7 +41,7 @@ Run `./build-paper`, which will generate the paper's PDF at `./GQFC.pdf`.
 In some circumstances, it might be desirable to read only the source code for the paper, without any of the text.
 
 **Requirements**
-- the program [`unlit`](https://hackage.haskell.org/package/unlit) (to get it, just `cabal install unlit`)
+- the program [`unlit`](https://hackage.haskell.org/package/unlit) (to get it: `cabal install unlit`)
 
 **What to do:**
 Run `./extract-code`, which will generate a Haskell source file `./GQFC.hs` containing only the code for the library.
