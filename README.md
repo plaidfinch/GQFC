@@ -1,9 +1,9 @@
 Functional Pearl: Getting a Quick Fix on Comonads
 -------------------------------------------------
 
-K. Foner. "Functional  Pearl: Getting  a  Quick  Fix on Comonads." In *Proceedings of the 2015 ACM SIGPLAN Symposium on Haskell.*  ACM, 2015.
+**This repository is the source for the paper:** K. Foner. "Functional  Pearl: Getting  a  Quick  Fix on Comonads." In *Proceedings of the 2015 ACM SIGPLAN Symposium on Haskell.*  ACM, 2015.
 
-This repository contains the full source material for the above paper, in the form of literate Haskell which can either be compiled to a PDF of the paper, or to executable code for the library it describes.
+The paper is written in literate Haskell. It can be compiled both to a readable PDF and to executable code for the library it describes.
 
 The quickest way to read the paper is to [download the compiled pre-print PDF](https://github.com/kwf/GQFC/raw/master/GQFC.pdf).
 
@@ -19,7 +19,7 @@ From these elements, we construct a small embedded domain-specific language to e
 
 ## Quick Start
 
-To build all the artifacts in the project, you need:
+To build all the paper's artifacts, you need:
 
 - A version of `GHC` 7.8 or greater
 - A version of `cabal` supporting sandboxes (i.e. 1.18 or greater)
@@ -28,24 +28,16 @@ To build all the artifacts in the project, you need:
 - [`lhs2TeX`](http://www.andres-loeh.de/lhs2tex) (to get it:  `cabal install lhs2tex`)
 - [`unlit`](https://hackage.haskell.org/package/unlit) (to get it: `cabal install unlit`)
 
-The script `./build-everything` creates a `cabal` sandbox and builds all the artifacts.
+The script `./build-everything` creates a `cabal` sandbox and builds all artifacts.
 
 After that, you can...
 
-- view `./GQFC.pdf` to read the paper
-- run `cabal repl` to launch a REPL with the code
-- view `./GQFC.hs` to read *only* the code with the paper text elided
+- open `./GQFC.pdf` to read the paper
+- run `cabal repl` to launch a REPL with the paper's code
+- open `./GQFC.hs` to read *only* the code, eliding the paper text
 
-Below are details about building each of the artifacts individually.
+To re-build an individual artifact:
 
-### Playing Along with the Code
-
-Run `./build-code` once to build things, then enter a REPL by running `cabal repl`.
-
-### Building the Paper
-
-Run `./build-paper`, which will generate the paper's PDF at `./GQFC.pdf`.
-
-### Reading Only the Code
-
-Run `./extract-code`, which will generate a Haskell source file `./GQFC.hs` containing only the code for the library, with none of the paper text.
+- `./build-paper` to re-render the paper
+- `./build-code` to re-compile the library
+- `./extract-code` to re-extract the library code
