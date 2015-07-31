@@ -7,7 +7,7 @@ The paper is written in literate Haskell. It can be compiled both to a readable 
 
 The quickest way to read the paper is to [download the compiled pre-print PDF](https://github.com/kwf/GQFC/raw/master/GQFC.pdf).
 
-To read the paper's source code or play around with it in a REPL, you can [build its accompanying artifacts](https://github.com/kwf/GQFC#building-the-artifacts).
+To read the source code or play around with it in a REPL, you can [build the accompanying artifacts](https://github.com/kwf/GQFC#building-the-artifacts).
 
 ## Abstract
 
