@@ -5,6 +5,8 @@ This repository is the source for the paper: **K. Foner. "Functional  Pearl: Get
 
 * * *
 
+*A preview of what's inside...*
+
 <img src="lfix-tagged.png">
 
 The quickest way to read the paper is to [download the compiled pre-print PDF](https://github.com/kwf/GQFC/raw/master/GQFC.pdf).
