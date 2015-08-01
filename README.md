@@ -1,15 +1,13 @@
 Functional Pearl: Getting a Quick Fix on Comonads
 -------------------------------------------------
 
-<img src="lfix-tagged.png">
-
 This repository is the source for the paper: **K. Foner. "Functional  Pearl: Getting  a  Quick  Fix on Comonads." In *Proceedings of the 2015 ACM SIGPLAN Symposium on Haskell.*  ACM, 2015.**
 
-The paper is written in LaTeX-flavored literate Haskell. It can be compiled both to a readable PDF and to executable code for the library it describes.
+<img src="lfix-tagged.png">
 
 The quickest way to read the paper is to [download the compiled pre-print PDF](https://github.com/kwf/GQFC/raw/master/GQFC.pdf).
 
-To read the source code or play around with it in a REPL, you can [build the accompanying artifacts](https://github.com/kwf/GQFC#building-the-artifacts).
+The paper is written in literate Haskell of the LaTeX flavor. It can be compiled both to a readable PDF and to executable code for the library it describes. This means that you can read the source code or play around with it in a REPL by [building the accompanying artifacts](https://github.com/kwf/GQFC#building-the-artifacts).
 
 ## Abstract
 
