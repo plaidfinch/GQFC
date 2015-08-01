@@ -9,7 +9,7 @@ This repository is the source for the paper: **K. Foner. "Functional  Pearl: Get
 
 <img src="lfix-tagged.png">
 
-The quickest way to read the paper is to [download the compiled pre-print PDF](https://github.com/kwf/GQFC/raw/master/GQFC.pdf).
+The quickest way to read the paper is to **[download the rendered pre-print (PDF)](https://github.com/kwf/GQFC/raw/master/GQFC.pdf)**.
 
 The paper is written in literate Haskell of the LaTeX flavor. It can be compiled both to a readable PDF and to executable code for the library it describes. This means that you can read the source code or play around with it in a REPL by [building the accompanying artifacts](https://github.com/kwf/GQFC#building-the-artifacts).
 
