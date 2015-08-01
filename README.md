@@ -5,7 +5,7 @@ This repository is the source for the paper: **K. Foner. "Functional  Pearl: Get
 
 * * *
 
-*A preview of what's inside...*
+***A preview of what's inside...***
 
 <img src="lfix-tagged.png">
 
