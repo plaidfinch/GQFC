@@ -8,6 +8,11 @@
 *.ptb
 *.hi
 *.o
+.DS_Store
+scratch.tex
+scratch.hs
+scratch.lhs
+scratch.pdf
 GQFC.tex
 GQFC.hs
 cabal.sandbox.config
