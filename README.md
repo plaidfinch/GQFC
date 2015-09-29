@@ -13,7 +13,7 @@ The quickest way to read the paper is to **[download the rendered pre-print (PDF
 
 The paper is written in literate Haskell of the LaTeX flavor. It can be compiled both to a readable PDF and to executable code for the library it describes. This means you can read the source code or play around with it in a REPL if you **[build the accompanying artifacts](https://github.com/kwf/GQFC#building-the-artifacts)**.
 
-You may also want to look at the **[slides from the Haskell Symposium talk](https://github.com/kwf/GQFC/raw/master/Presentation.pptx)** (complete with *fancy animations*!).
+You may also want to look at the **[slides from the talk](https://github.com/kwf/GQFC/raw/master/Presentation.pptx)** (complete with *fancy animations*!).
 
 ## Abstract
 
